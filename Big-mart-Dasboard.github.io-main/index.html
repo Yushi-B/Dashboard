@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="dist/gauge.min.js"></script>
+  <script>
+    const SUPABASE_URL = 'https://tmfgonwvxwcpnjzswwag.supabase.co'
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRtZmdvbnd2eHdjcG5qenN3d2FnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTYzMjQxMDQsImV4cCI6MjAxMTkwMDEwNH0.JKVTfrXpB6yDO5Wy5Xh6IJn_6aVuaja1hx4VdVzRsWM'
+
+    const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+  </script>
+
+<script>
+   async function loadData() {
+      const { data, error } = await _supabase
+        .from('Users')
+        .select()
+
+      if (!error) {
+        //loop display data here
+        const parent = document.getElementById('profile-name')
+
+        let contents = ''
+        
+        contents += '<div> ${data(0).Name}</div>'
+        parent.insertAdjacentHTML('beforeend', contents)
+      }
+
+    }
+  </script>
+ 
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+ 
+
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo.png" alt="">
+      <span class="d-none d-lg-block">Big Mart </span>
+    </a>
+
+  </div><!-- End Logo -->
+
+  
+
+  <nav class="header-nav ms-auto navbar navbar-expand-md navbar-light bg-light">
+    <ul class="d-flex align-items-center">
+
+      
+       
+          <!-- Navbar Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 30px;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Navbar Items -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="@media (max-width: 768px) {top:10px;}">Our website</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index2.html">Performace</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index3.html">Managment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index4.html">Supply chain</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index5.html">History</a>
+              </li>
+              
+            </ul>
+          </div>
+        
+
+      
+      
+
+      <li class="nav-item dropdown">
+
+        <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+          <i class="bi bi-bell"></i>
+          <span class="badge bg-primary badge-number">3</span>
+        </a><!-- End Notification Icon -->
+
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+          <li class="dropdown-header">
+            You have 3 new notifications
+            <a href="Notifications.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="notification-item">
+            <i class="bi bi-exclamation-circle text-warning"></i>
+            <div>
+              <h4>Abbadond carts </h4>
+              <p>13 users abandeon carts at same time </p>
+              <p>30 min. ago</p>
+            </div>
+          </li>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="notification-item">
+            <i class="bi bi-x-circle text-danger"></i>
+            <div>
+              <h4>Network outage</h4>
+              <p>The network was down for 33 seconds</p>
+              <p>30 min. ago</p>
+            </div>
+          </li>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="notification-item">
+            <i class="bi bi-check-circle text-success"></i>
+            <div>
+              <h4>Sign-ups</h4>
+              <p>Our new signups today has increased from yesterday</p>
+              <p>2 hrs. ago</p>
+            </div>
+          </li>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          
+          <li class="dropdown-footer">
+            <a href="Notifications.html">Show all notifications</a>
+          </li>
+
+        </ul><!-- End Notification Dropdown Items -->
+
+      </li><!-- End Notification Nav -->
+
+      
+
+      <li class="nav-item dropdown pe-3">
+
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+          <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+          <span class="d-none d-md-block  ps-2">Louis Batty</span>
+        </a><!-- End Profile Iamge Icon -->
+
+        
+      </li><!-- End Profile Nav -->
+
+    </ul>
+  </nav><!-- End Icons Navigation -->
+
+</header><!-- End Header -->
+
+
+  
+
+  <main id="main" class="main">
+
+   
+
+    <section class="section dashboard">
+      <div class="row">
+<h2>Our website</h2>
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            <!-- Sales Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#" id="today">Today</a></li>
+                    <li><a class="dropdown-item" href="#" id="this-month">This Month</a></li>
+                    <li><a class="dropdown-item" href="#" id="this-year">This Year</a></li>
+
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Visitors <span id="date">| Today</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-cart"></i>
+                    </div>
+                    <div class="ps-3">
+                      <a href="Visitors.html"><h6 id="visitors-count">1059</h6></a>
+                      <span class="text-success small pt-1 fw-bold" id="percentage-increase">12%</span>
+                      <span class="text-muted small pt-2 ps-1" id="increase-label">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+            <!-- Revenue Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#" id="revenue-today">Today</a></li>
+                    <li><a class="dropdown-item" href="#" id="revenue-this-month">This Month</a></li>
+                    <li><a class="dropdown-item" href="#" id="revenue-this-year">This Year</a></li>
+
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">New sign ups <span>| Today</span></h5>
+                
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <!-- Replacing the icon with a user icon -->
+                      <i class="bi bi-person"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 id="new-sign-ups-count">121</h6>
+                      <span class="text-success small pt-1 fw-bold" id="percentage-increase-revenue">2%</span>
+                      <span class="text-muted small pt-2 ps-1" id="increase-label-revenue">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div><!-- End Revenue Card -->
+
+            <!-- Customers Card -->
+            <div class="col-xxl-4 col-xl-12">
+
+              <div class="card info-card customers-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">check outs<span>| Today</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-cart"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>43</h6>
+                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Customers Card -->
+
+            
+<div class="col-lg-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Abadon carts</h5>
+
+      <!-- Radar Chart -->
+      <div id="radarChart"></div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          new ApexCharts(document.querySelector("#radarChart"), {
+            series: [{
+              name: 'Series 1',
+              data: [34, 20,16 , 10, 23, 40],
+            }],
+            chart: {
+              height: 350,
+              type: 'radar',
+            },
+            xaxis: {
+              categories: ['08:00', '12:00', '16:00', '20:00', '00:00', '04:00']
+            },
+            colors: ['#2eca6a'],
+          }).render();
+        });
+      </script>
+      <!-- End Radar Chart -->
+
+    </div>
+  </div>
+</div>
+<div class="col-lg-6">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card">
+      <div class="card-body">
+        <h6 class="card-title">Network Outages</h6>
+        <div class="align-items-center horizontalAlign">
+          <p class="card-body" style="color: #FFD700; font-size: 40px; align-items: center; align-content: center;">5</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="col-lg-6">
+  <div class="card">
+    <div class="card-body">
+      <h6 class="card-title">Packet Losses</h6>
+      <div class="align-items-center horizontalAlign">
+        <p id="packet-loss" class="card-body"
+          style="color: #FFD700; font-size: 40px; align-items: center; align-content: center;">0.80%</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="col-lg-12">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title">Server - Temp(&deg;C)</div>
+      <div id="gauge-demo" class="gauge-container two"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+
+          
+          
+          <!-- Website Traffic -->
+          <div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+          
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title">Website Traffic <span>| Today</span></h5>
+          
+              <div id="trafficChart" style="min-height: 400px;" class="echart"></div>
+              
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  const chart = echarts.init(document.querySelector("#trafficChart"));
+
+                  // Define the data for the pie chart
+                  const data = [
+                    {
+                      value: 777,
+                      name: 'Search Engine',
+                      itemStyle: {
+                        color: '#4154f1' // Deep Cyan (Main Accent)
+                      }
+                    },
+                    {
+                      value: 120,
+                      name: 'Direct',
+                      itemStyle: {
+                        color: '#98e5b2' // Turquoise (Secondary Accent)
+                      }
+                    },
+                    {
+                      value: 88,
+                      name: 'Email',
+                      itemStyle: {
+                        color: '#7288e8' // Neutral Black (Text and Icons)
+                      }
+                    },
+                    {
+                      value: 20,
+                      name: 'Union Ads',
+                      itemStyle: {
+                        color: '#e0f8e9' // Soft Light Blue (Main Background)
+                      }
+                    },
+                    {
+                      value: 54,
+                      name: 'Video Ads',
+                      itemStyle: {
+                        color: '#c0cffc' // Gold Yellow (Complementary Highlight)
+                      }
+                    }
+                  ];
+
+                  const option = {
+                    tooltip: {
+                      trigger: 'item'
+                    },
+                    legend: {
+                      top: '5%',
+                      left: 'center'
+                    },
+                    series: [{
+                      name: 'Access From',
+                      type: 'pie',
+                      radius: ['40%', '70%'],
+                      avoidLabelOverlap: true,
+                      label: {
+                        show: false,
+                        position: 'center'
+                      },
+                      emphasis: {
+                        label: {
+                          show: true,
+                          fontSize: '18',
+                          fontWeight: 'bold'
+                        }
+                      },
+                      labelLine: {
+                        show: false
+                      },
+                      data: data
+                    }]
+                  };
+
+                  // Add click event listeners to each segment of the pie chart
+                  chart.on('click', 'series.pie', function (params) {
+                    const clickedSegment = params.name;
+
+                    // Perform navigation based on the clicked segment
+                    switch (clickedSegment) {
+                      case 'Search Engine':
+                        window.location.href = 'traffic.html?segment=searchEngine';
+                        break;
+                      case 'Direct':
+                        window.location.href = 'traffic.html?segment=direct';
+                        break;
+                      case 'Email':
+                        window.location.href = 'traffic.html?segment=email'
+                        break;
+                      case 'Video Ads':
+                        window.location.href = 'traffic.html?segment=videoAds'
+                        break;
+                      // Add more cases for other segments as needed
+                      default:
+                        break;
+                    }
+                  });
+
+                  // Set the chart options and render the chart
+                  chart.setOption(option);
+                });
+              </script> 
+
+
+          
+            </div>
+          </div><!-- End Website Traffic -->
+          
+          <div class="btn-conteiner">
+            <a class="btn-content" href="index2.html">
+              <span class="btn-title">NEXT</span>
+              <span class="icon-arrow">
+                <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path id="arrow-icon-one"
+                      d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path id="arrow-icon-two"
+                      d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path id="arrow-icon-three"
+                      d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </br>
+        </br>
+        </br>
+        </br>
+        
+
+        </div><!-- End Right side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/justgage@1.4.0/justgage.min.js"></script>
+
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+ 
+
+</body>
+
+</html>

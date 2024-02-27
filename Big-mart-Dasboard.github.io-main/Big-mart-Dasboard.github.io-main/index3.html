@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Dashboard</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #4144f1;
+        /* Soft Light Blue (Main Background) */
+      }
+
+      .table-striped tbody tr:nth-of-type(even) {
+        background-color: #e4f1f0;
+        /* Light Teal (Subtle Shade) */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span class="d-none d-lg-block">Big Mart </span>
+        </a>
+      </div>
+      <!-- End Logo -->
+
+      <nav
+        class="header-nav ms-auto navbar navbar-expand-md navbar-light bg-light"
+      >
+        <ul class="d-flex align-items-center">
+          <!-- Navbar Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="margin-right: 30px"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Items -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="index.html"
+                  style="@media (max-width: 768px) {top: 10px}"
+                  >Our website</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index2.html">Performace</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index3.html">Managment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index4.html">Supply chain</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index5.html">History</a>
+              </li>
+            </ul>
+          </div>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">3</span> </a
+            ><!-- End Notification Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 3 new notifications
+                <a href="Notifications.html"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Abbadond carts</h4>
+                  <p>13 users abandeon carts at same time</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Network outage</h4>
+                  <p>The network was down for 33 seconds</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sign-ups</h4>
+                  <p>Our new signups today has increased from yesterday</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="Notifications.html">Show all notifications</a>
+              </li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block ps-2">Louis Batty</span> </a
+            ><!-- End Profile Iamge Icon -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <main id="main" class="main">
+      <section class="section dashboard">
+        <div class="row">
+          <!-- Left side columns -->
+          <div class="col-lg-8">
+            
+            <div class="row">
+              <h2>Wearhouse operations & Inventory managmnet</h2>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Order operations</h5>
+
+                    <!-- Column Chart -->
+                    <div id="columnChart"></div>
+
+                    <script>
+                      document.addEventListener("DOMContentLoaded", () => {
+                        new ApexCharts(document.querySelector("#columnChart"), {
+                          series: [
+                            {
+                              name: "Fulfillment Rate",
+                              data: [92, 88, 95, 91, 86],
+                              color: "#4144f1",
+                            },
+                            {
+                              name: "Capacity Utilization",
+                              data: [76, 85, 60, 90, 87],
+                              color: "#ffd700",
+                            },
+                            {
+                              name: "On-Time Delivery Rate",
+                              data: [96, 41, 88, 77, 91],
+                              color: "#2eca6a",
+                            },
+                          ],
+                          chart: {
+                            type: "bar",
+                            height: 400,
+                          },
+                          plotOptions: {
+                            bar: {
+                              horizontal: false,
+                              columnWidth: "55%",
+                              endingShape: "rounded",
+                            },
+                          },
+                          dataLabels: {
+                            enabled: false,
+                          },
+                          stroke: {
+                            show: true,
+                            width: 2,
+                            colors: ["transparent"],
+                          },
+                          xaxis: {
+                            categories: ["A", "B", "C", "D", "E"],
+                          },
+                          yaxis: {
+                            title: {
+                              text: "Percentage",
+                            },
+                          },
+                          fill: {
+                            opacity: 1,
+                            colors: ["#4154f1", "#ffd700", "#2eca6a"], // Match these colors to your palette
+                          },
+                          tooltip: {
+                            y: {
+                              formatter: function (val) {
+                                return val + "%";
+                              },
+                            },
+                          },
+                        }).render();
+                      });
+                    </script>
+                    <!-- End Column Chart -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Inventory Levels</h5>
+
+                    <!-- Table with stripped rows -->
+                    <div class="container mt-4">
+                      <div class="input-group">
+                        <label
+                          for="warehouseDropdown"
+                          class="input-group-prepend"
+                        >
+                          <span class="input-group-text">
+                            <i class="fas fa-caret-down"></i>
+                          </span>
+                        </label>
+                        <select class="custom-select" id="warehouseDropdown">
+                          <option id="fibdeckOption" value="A" selected>
+                            FibDeck Warehouse
+                          </option>
+                          <option value="B">SuckDen Warehouse</option>
+                          <option value="C">BakeKim Warehouse</option>
+                          <option value="D">SixGunSmoke</option>
+                          <option value="E">AnaDeck Warehouse</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div id="selectedWarehouse" class="mt-4"></div>
+
+                    <!-- Container for the inventory charts -->
+                    <div id="inventoryCharts" class="mt-4"></div>
+                  </div>
+                </div>
+              </div>
+              <!--Script for Inverntory warehouse -->
+              <script>
+                function orderProduct(product) {
+                  var alertSent = document.querySelector(
+                    'tbody tr th[data-product="' + product + '"]'
+                  ).nextElementSibling.textContent;
+                  if (alertSent === "Yes") {
+                    alert("You have already ordered this product.");
+                  } else {
+                    alert("You have ordered this product.");
+                    document.querySelector(
+                      'tbody tr th[data-product="' + product + '"]'
+                    ).nextElementSibling.textContent = "Yes";
+                  }
+                }
+
+                // Sample inventory data for each warehouse
+                const warehouseData = {
+                  A: { currentInventory: 7500, maxLevel: 10625 },
+                  B: { currentInventory: 6200, maxLevel: 9560 },
+                  C: { currentInventory: 12000, maxLevel: 13200 },
+                  D: { currentInventory: 6500, maxLevel: 12350 },
+                  E: { currentInventory: 10000, maxLevel: 12400 },
+                };
+
+                // Get references to the dropdown and selectedWarehouse elements
+                const warehouseDropdown =
+                  document.getElementById("warehouseDropdown");
+                const selectedWarehouse =
+                  document.getElementById("selectedWarehouse");
+                const inventoryCharts =
+                  document.getElementById("inventoryCharts");
+
+                // Function to create and update a chart for the selected warehouse
+                function createAndUpdateChart(warehouse) {
+                  const data = warehouseData[warehouse];
+                  if (data) {
+                    const { currentInventory, maxLevel } = data;
+
+                    // Update the selectedWarehouse element with the selected warehouse name
+                    selectedWarehouse.textContent = `Selected Warehouse: ${currentInventory} units`;
+
+                    // Clear the existing chart by removing it from the DOM
+                    inventoryCharts.innerHTML = "";
+
+                    // Create a new chart
+                    const chartCanvas = document.createElement("canvas");
+                    chartCanvas.width = 400;
+                    chartCanvas.height = 200;
+                    inventoryCharts.appendChild(chartCanvas);
+
+                    const chartContext = chartCanvas.getContext("2d");
+
+                    const chart = new Chart(chartContext, {
+                      type: "bar",
+                      data: {
+                        labels: ["Current Inventory", "Max Level"],
+                        datasets: [
+                          {
+                            label: "Inventory Levels",
+                            data: [currentInventory, maxLevel],
+                            backgroundColor: [
+                              "rgba(75, 192, 192, 0.2)",
+                              "rgba(255, 99, 132, 0.2)",
+                            ],
+                            
+                            borderColor: [
+                              "rgba(75, 192, 192, 1)",
+                              "rgba(255, 99, 132, 1)",
+                            ],
+                            borderWidth: 1,
+                          },
+                          {
+                            label :"Max Level ",
+                              backgroundColor: [
+                              "rgba(75, 192, 192, 0.2)",
+                              "rgba(255, 99, 132, 0.2)",
+                            ],
+                            borderWidth:1,
+                          }
+                          
+                        ],
+                      },
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true,
+                            max: maxLevel + 1000, // Adjust the maximum value for better visualization
+                          },
+                        },
+                      },
+                    });
+                  }
+                }
+
+                warehouseDropdown.addEventListener("change", function () {
+                  const selectedOption =
+                    warehouseDropdown.options[warehouseDropdown.selectedIndex];
+                  const selectedWarehouseValue = selectedOption.value;
+                  createAndUpdateChart(selectedWarehouseValue);
+                });
+
+                function initializeChart() {
+                  const fibdeckOption =
+                    document.getElementById("fibdeckOption");
+                  if (fibdeckOption) {
+                    fibdeckOption.selected = true;
+                    createAndUpdateChart(fibdeckOption.value);
+                    console.log("Log Chart");
+                  }
+                }
+
+                // Trigger the chart initialization during the first page load
+                initializeChart();
+              </script>
+
+              <!--StockLead Time -->
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Stock lead time</h5>
+
+                    <!-- -->
+
+                    <!-- Bubble Chart -->
+                    <div
+                      id="areaChart"
+                      style="min-height: 400px"
+                      class="echart"
+                    ></div>
+
+                    <script>
+                      document.addEventListener("DOMContentLoaded", () => {
+                          const data = [
+                            [100, 900, 17096869, "Product 1", 1990],
+                            [200, 800, 27662440, "Product 2", 1990],
+                            [50, 1000, 1154605773, "Product 3", 1990],
+                            [300, 200, 10582082, "Product 4", 1990],
+                            [400, 100, 4986705, "Product 5", 1990],
+                            [150, 350, 56943299, "Product 6", 1990],
+                            [350, 450, 78958237, "Product 7", 1990],
+                          ];
+
+                          // Assuming you have a div with the id "areaChart" to render the area chart.
+                          const areaChart = echarts.init(document.querySelector("#areaChart"));
+
+                          const xAxisData = data.map(item => item[3]);
+                          const unitsAvailableData = data.map(item => item[0]);
+                          const unitsSoldData = data.map(item => item[1]);
+
+                          areaChart.setOption({
+                            legend: {
+                              data: ["Units Available", "Units Sold"],
+                              top: "3%",
+                            },
+                            grid: {
+                              left: "8%",
+                              top: "10%",
+                              right: "10%", // Adjust the right margin as needed.
+                            },
+                            xAxis: {
+                              type: "category",
+                              data: xAxisData,
+                              name: "Product Name",
+                            },
+                            yAxis: {
+                              name: "Units",
+                            },
+                            series: [
+                              {
+                                name: "Units Available",
+                                data: unitsAvailableData,
+                                type: "line",
+                                areaStyle: { color: "#e0f8e9" },
+                              },
+                              {
+                                name: "Units Sold",
+                                data: unitsSoldData,
+                                type: "line",
+                                areaStyle: { color: "#fff8d4" },
+                                
+                              },
+                            ],
+                          });
+                        });
+
+
+                   function refreshPage() {
+                      // Add a click event listener to the "OK" button within the modal
+                      document.getElementById("btnConfirm").addEventListener("click", function () {
+                        $("#WarningModal").modal("hide");
+                      });
+                    }
+                      function ShowPopUpMsg(btnID, oderID) {
+                        if (
+                          document.getElementById(oderID).innerText == "Yes"
+                        ) {
+                          document.getElementById("DetailedMessage").innerText =
+                            "Order Already Sent";
+                          document
+                            .getElementById(btnID)
+                            .addEventListener("click", function () {
+                              $("#WarningModal").modal("show");
+                            });
+                        } else {
+                          document.getElementById("DetailedMessage").innerText =
+                            " Order Sent";
+                          document
+                            .getElementById(btnID)
+                            .addEventListener("click", function () {
+                              document.getElementById(oderID).innerText = "Yes";
+                              $("#WarningModal").modal("show");
+                            });
+                        }
+                      }
+                    </script>
+                    <!-- End Bubble Chart -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Left side columns -->
+
+          <!-- Right side columns -->
+          <div class="col-lg-4">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Alert plan</h5>
+
+                  <!-- Table with stripped rows -->
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Alert sent</th>
+                        <th scope="col">Order</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">A</th>
+                        <td id="orderA">Yes</td>
+                        <td>
+                          <button
+                            class="btn btn-dark"
+                            id="A"
+                            onclick="ShowPopUpMsg('A','orderA')"
+                          >
+                            Order
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">B</th>
+                        <td id="orderB">Yes</td>
+                        <td>
+                          <button
+                            class="btn btn-dark"
+                            id="B"
+                            onclick="ShowPopUpMsg('B','orderB')"
+                          >
+                            Order
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">C</th>
+                        <td id="orderC">Yes</td>
+                        <td>
+                          <button
+                            class="btn btn-dark"
+                            id="C"
+                            onclick="ShowPopUpMsg('C','orderC')"
+                          >
+                            Order
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">D</th>
+                        <td id="orderD">No</td>
+                        <td>
+                          <button
+                            class="btn btn-dark"
+                            id="D"
+                            onclick="ShowPopUpMsg('D','orderD')"
+                          >
+                            Order
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">E</th>
+                        <td id="orderE">No</td>
+                        <td>
+                          <button
+                            class="btn btn-dark"
+                            id="E"
+                            onclick="ShowPopUpMsg('E','orderE')"
+                          >
+                            Order
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">F</th>
+                        <td id="orderF">Yes</td>
+                        <td>
+                          <button
+                            class="btn btn-dark"
+                            id="F"
+                            onclick="ShowPopUpMsg('F','orderF')"
+                          >
+                            Order
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">G</th>
+                        <td id="orderG">No</td>
+                        <td>
+                          <button
+                            class="btn btn-dark"
+                            id="G"
+                            onclick="ShowPopUpMsg('G','orderG')"
+                          >
+                            Order
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- End Table with stripped rows -->
+                 
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-conteiner">
+              <a class="btn-content" href="index4.html">
+                <span class="btn-title">NEXT</span>
+                <span class="icon-arrow">
+                  <svg
+                    width="66px"
+                    height="43px"
+                    viewBox="0 0 66 43"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g
+                      id="arrow"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <path
+                        id="arrow-icon-one"
+                        d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                        fill="#FFFFFF"
+                      ></path>
+                      <path
+                        id="arrow-icon-two"
+                        d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                        fill="#FFFFFF"
+                      ></path>
+                      <path
+                        id="arrow-icon-three"
+                        d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                        fill="#FFFFFF"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- End Right side columns -->
+        </div>
+        <div
+          class="modal fade"
+          id="WarningModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="errorModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="warningModalTitle">Success</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p id="warningMessage"></p>
+                <p id="lblMessage"></p>
+                <p id="DetailedMessage"></p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn button1"
+                  id="btnConfirm"
+                  onclick="refreshPage()"
+                >
+                  OK
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                  id="btnCancel"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

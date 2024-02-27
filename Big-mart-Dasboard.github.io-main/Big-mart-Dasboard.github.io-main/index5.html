@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .credit-item {
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #ddd;
+    }
+  
+    .credit-item img {
+      max-width: 100%;
+    }
+
+    .credit-item img {
+      max-width: 100%;
+      height: auto;
+      width: 100%; /* Set the width to create a square */
+    }
+    </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+  
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Big Mart </span>
+      </a>
+  
+    </div><!-- End Logo -->
+  
+  
+  
+    <nav class="header-nav ms-auto navbar navbar-expand-md navbar-light bg-light">
+      <ul class="d-flex align-items-center">
+  
+  
+  
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 30px;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" style="@media (max-width: 768px) {top:10px;}">Our website</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index2.html">Performace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index3.html">Managment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index4.html">Supply chain</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index5.html">Credit</a>
+            </li>
+  
+          </ul>
+        </div>
+  
+  
+  
+  
+  
+        <li class="nav-item dropdown">
+  
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">3</span>
+          </a><!-- End Notification Icon -->
+  
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 3 new notifications
+              <a href="Notifications.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+  
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Abbadond carts </h4>
+                <p>13 users abandeon carts at same time </p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+  
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+  
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Network outage</h4>
+                <p>The network was down for 33 seconds</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+  
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+  
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sign-ups</h4>
+                <p>Our new signups today has increased from yesterday</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+  
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+  
+  
+            <li class="dropdown-footer">
+              <a href="Notifications.html">Show all notifications</a>
+            </li>
+  
+          </ul><!-- End Notification Dropdown Items -->
+  
+        </li><!-- End Notification Nav -->
+  
+  
+  
+        <li class="nav-item dropdown pe-3">
+  
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block  ps-2">Louis Batty</span>
+          </a><!-- End Profile Iamge Icon -->
+  
+  
+        </li><!-- End Profile Nav -->
+  
+      </ul>
+    </nav><!-- End Icons Navigation -->
+  
+  </header><!-- End Header -->
+
+  
+
+<main id="main" class="main">
+  <section class="section dashboard">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="credit-item text-center">
+            <img src="assets/img/Louis.jpg" alt="Person 1">
+            <h3>Louis Batty</h3>
+            <p>lead developer</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="credit-item text-center">
+            <img src="assets/img/Ayush.jpg" alt="Person 2">
+            <h3>Ayush Bhadra</h3>
+            <p>Junior developer</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="credit-item text-center">
+            <img src="assets/img/jose.jpg" alt="Person 3">
+            <h3>Jose hyman</h3>
+            <p>At the track</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="credit-item text-center">
+            <img src="assets/img/Tadi.jpg" alt="Person 4">
+            <h3>Tadiwanasha Chingwa</h3>
+            <p>Just there for vibes</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="credit-item text-center">
+            <img src="assets/img/edwin.jpg" alt="Person 5">
+            <h3>Edwin Malgi</h3>
+            <p>One Chart Guy</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="credit-item text-center">
+            <img src="assets/img/Papudi.jpg" alt="Person 6">
+            <h3>Rupudi Hulchudie</h3>
+            <p>APK Guy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+  <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

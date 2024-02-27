@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dashboard </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+
+  <div class="d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo.png" alt="">
+      <span class="d-none d-lg-block">Big Mart </span>
+    </a>
+
+  </div><!-- End Logo -->
+
+
+
+  <nav class="header-nav ms-auto navbar navbar-expand-md navbar-light bg-light">
+    <ul class="d-flex align-items-center">
+
+
+
+      <!-- Navbar Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 30px;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="@media (max-width: 768px) {top:10px;}">Our website</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html">Performace</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index3.html">Managment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index4.html">Supply chain</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index5.html">History</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+
+
+
+      <li class="nav-item dropdown">
+
+        <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+          <i class="bi bi-bell"></i>
+          <span class="badge bg-primary badge-number">2</span>
+        </a><!-- End Notification Icon -->
+
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+          <li class="dropdown-header">
+            You have 2 new notifications
+            <a href="Notifications.html"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+          <li class="notification-item">
+            <i class="bi bi-exclamation-circle text-danger"></i>
+            <div>
+              <h4>Store revenue major drop</h4>
+              <p>Store 4 revenue droped by 20%</p>
+              <p>Today</p>
+            </div>
+          </li>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+         
+
+          <li class="notification-item">
+            <i class="bi bi-check-circle text-success"></i>
+            <div>
+              <h4>Feet count</h4>
+              <p>All stores feet count gose up in week 4 of the month we should use this to our advantage </p>
+              <p>2 hrs. ago</p>
+            </div>
+          </li>
+
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+
+
+          <li class="dropdown-footer">
+            <a href="Notifications.html">Show all notifications</a>
+          </li>
+
+        </ul><!-- End Notification Dropdown Items -->
+
+      </li><!-- End Notification Nav -->
+
+
+
+      <li class="nav-item dropdown pe-3">
+
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+          <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+          <span class="d-none d-md-block  ps-2">Louis Batty</span>
+        </a><!-- End Profile Iamge Icon -->
+
+
+      </li><!-- End Profile Nav -->
+
+    </ul>
+  </nav><!-- End Icons Navigation -->
+
+</header><!-- End Header -->
+
+  
+
+  <main id="main" class="main">
+
+   
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            
+
+        
+<H2>Store's Performance</H2>
+            
+<!-- Reports -->
+<div class="col-12">
+  <div class="card">
+
+    <div class="card-body">
+      <h5 class="card-title">Feet count <span>/This month</span></h5>
+
+      <!-- Line Chart -->
+      <div id="reportsChart"></div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          new ApexCharts(document.querySelector("#reportsChart"), {
+            series: [
+              {
+                name: 'Store 1',
+                data: [1000, 1200, 1300, 2000]
+              }, {
+                name: 'Store 2',
+                data: [1000, 1000, 1400, 1750]
+              },
+              {
+                name: 'Store 3',
+                data: [500, 750, 300, 1250]
+              }, {
+                name: 'Store 4',
+                data: [700, 440, 635, 1000]
+              }, {
+                name: 'Store 5',
+                data: [1800, 1650, 1280, 2250]
+              }
+              , {
+                name: 'Store 6',
+                data: [1600, 1240, 1050, 1940]
+              }],
+            chart: {
+              height: 350,
+
+              toolbar: {
+                show: false
+              },
+            },
+            markers: {
+              size: 4
+            },
+            colors: ['#4154f1', '#2eca6a', '#ffd700', '#c0cffc', '#e0f8e9', '#fff9d4'],
+            
+            dataLabels: {
+              enabled: false
+            },
+            stroke: {
+              curve: 'smooth',
+              width: 4
+            },
+            xaxis: {
+              type: 'Retail stores',
+              categories: ["Week 1", "Week 2", "Week 3", "Week 4"]
+            },
+            tooltip: {
+              x: {
+                format: 'dd/MM/yy HH:mm'
+              },
+            }
+          }).render();
+        });
+      </script>
+      <!-- End Line Chart -->
+   
+    </div>
+
+  </div>
+
+  
+ 
+</div><!-- End Reports -->
+<H2>Customer satifaction</H2>
+<!-- Pie Chart for Customer Satisfaction -->
+<div class="col-lg-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Customer Satisfaction</h5>
+
+      <!-- Pie Chart -->
+      <canvas id="pieChart" style="max-height: 400px;"></canvas>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const pieChart = new Chart(document.querySelector('#pieChart'), {
+            type: 'pie',
+            data: {
+              labels: ['Positive', 'Neutral', 'Negative'],
+              datasets: [{
+                label: 'Customer Satisfaction',
+                data: [55, 30, 15],
+                backgroundColor: ['#98e5b2', '#e0f8e9', '#7288e8'],
+                hoverOffset: 8
+              }]
+            },
+            options: {
+              plugins: {
+                tooltip: {
+                  callbacks: {
+                    label: function (context) {
+                      var label = context.label || '';
+                      var value = context.raw || '';
+                      return label + ': ' + value + '%';
+                    }
+                  }
+                }
+              }
+            }
+          });
+
+          const wordCloudImage = document.getElementById("wordCloudImage");
+
+          // Add a click event listener to the pie chart
+          pieChart.options.onClick = (event, chartElements) => {
+            if (chartElements.length > 0) {
+              // Determine which section was clicked
+              const clickedSection = chartElements[0];
+              // Determine the index of the clicked section
+              const index = clickedSection.index;
+
+              // Update the image source based on the clicked section
+              if (index === 0) {
+                wordCloudImage.src = 'assets/img/Posc (1).png';
+              } else if (index === 1) {
+                wordCloudImage.src = 'assets/img/Nut.png';
+              } else if (index === 2) {
+                wordCloudImage.src = 'assets/img/neg.png';
+                
+              }
+            }
+          };
+        });
+      </script>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-lg-6">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Overall customer staisfaction</h5>
+
+    <!-- Bar Chart -->
+    <canvas id="barChart1" style="max-height: 400px;"></canvas>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        new Chart(document.querySelector('#barChart1'), {
+          type: 'bar', // Use 'bar' chart type
+          data: {
+            labels: [
+              '2017',
+              '2018',
+              '2019',
+              '2021',
+              '2022',
+            ],
+            datasets: [{
+              label: 'Overall Customer Satisfaction',
+              data: [50, 60, 70, 80, 79],
+              backgroundColor: [
+                '#c0cffc',
+                '#ffe05f',
+                '#98e5b2',
+                '#fff8d4',
+                '#e0f8e9',
+              ],
+            }]
+          },
+          options: {
+            scales: {
+              x: {
+                beginAtZero: true,
+              },
+              y: {
+                beginAtZero: true,
+                suggestedMax: 100, // Customize the scale as needed
+              },
+            },
+            plugins: {
+              legend: {
+                display: false, // Hide the legend
+              },
+              title: {
+                display: true,
+                text: 'Overall Customer Satisfaction', // Chart title
+                fontSize: 16,
+              },
+              responsive: true,
+              aspectRatio: 1.5, // Adjust the aspect ratio as needed
+            },
+          },
+        });
+      });
+    </script>
+    <!-- End Bar Chart -->
+
+
+
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+
+          
+          <!-- News & Updates Traffic -->
+          <div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li class="dropdown-header text-start">
+                  <h6>Filter</h6>
+                </li>
+          
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+          
+            <div class="card-body pb-0">
+              <h5 class="card-title">Revenue<span>| This Month</span></h5>
+          
+              <!-- Bar Chart -->
+              <canvas id="barChart" style="max-height: 400px;"></canvas>
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new Chart(document.querySelector('#barChart'), {
+                    type: 'bar',
+                    data: {
+                      labels: ['Store 1', 'Store 2', 'Store 3', 'Store 4', 'Store 5', 'Store 6'],
+                      datasets: [{
+                        label: 'Sales Revenue (ZAR)',
+                        data: [380000, 200000, 120000, 80000, 500000, 415000],
+                        backgroundColor: [
+                          '#c0cffc',
+                          '#fff8d4',
+                          '#e0f8e9',
+                          '#7288e8',
+                          '#ffe05f',
+                          '#98e5b2',
+                          'rgba(201, 203, 207, 0.2)'
+                        ],
+                        borderColor: [
+                          '#4154f1',
+                          '#ffd700',
+                          '#2eca6a',
+                          '#1b39e2',
+                          '#efc203',
+                          '#11b74c',
+                          'rgb(201, 203, 207)'
+                        ],
+                        borderWidth: 1
+                      }]
+                    },
+                    options: {
+                      scales: {
+                        y: {
+                          beginAtZero: false
+                        }
+                      }
+                    }
+                  });
+                });
+              </script>
+              <!-- End Bar CHart -->
+          
+            </div><!-- End sidebar recent posts-->
+          
+          </div>
+        <div class="col-lg-12">
+        <div class="card"> 
+          <div class="card-body">
+            <h5 class="card-title">Customer word cloud</h5>
+            <img id="wordCloudImage" src="assets\img\word-cloud.png" style="width: 100%; height: auto;">
+          </div>
+        </div>
+
+          <div class="card">
+            <div class="card-body">
+              <img src="assets\img\pos.png" style="width: 100%;height: auto;">
+            </div>
+          </div>
+        </div>
+        <div class="btn-conteiner">
+          <a class="btn-content" href="index.html">
+            <span class="btn-title">BACK</span>
+            <span class="icon-arrow">
+              <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <!-- Modified path data to make the arrow point to the left -->
+                  <path id="arrow-icon-one"
+                    d="M25.8456067,3.89485454 L22.0236851,0.139296592 C21.8291689,-0.0518420739 21.5173671,-0.0518571125 21.3228325,0.139262789 L0.308386602,20.7848311 C-0.0855800707,21.1718824 -0.0911863245,21.8050225 0.295135009,22.1989893 C0.299251215,22.2031791 0.303404282,22.2073326 0.307593765,22.2114492 L21.322172,42.8607841 C21.5166743,43.0519059 21.8284458,43.0519358 22.0239847,42.8608513 L25.8457514,39.1069479 C26.0427548,38.9134427 26.0455907,38.5968729 25.8520855,38.3998695 C25.8499807,38.3977268 25.8478568,38.395603 25.8457138,38.3934985 L9.00649107,21.8567812 C8.80946716,21.6632968 8.80659797,21.3467273 8.99941392,21.1497035 C9.00153682,21.1475418 9.00367928,21.1453995 9.005841,21.1432767 L25.8450808,4.60825197 C26.0421147,4.41477773 26.0450003,4.09820839 25.851526,3.90117456 C25.8494379,3.89904911 25.8473319,3.89694235 25.8452066,3.89485454 Z"
+                    fill="#FFFFFF"></path>
+                  <path id="arrow-icon-two"
+                    d="M45.8456067,3.89485454 L42.0236851,0.139296592 C41.8291689,-0.0518420739 41.5173671,-0.0518571125 41.3228325,0.139262789 L20.3083866,20.7848311 C19.9144199,21.1718824 19.9088137,21.8050225 20.295865,22.1989893 C20.2999812,22.2031791 20.3041343,22.2073326 20.3083238,22.2114492 L41.322902,42.8607841 C41.5174043,43.0519059 41.8291758,43.0519358 42.0237147,42.8608513 L45.8454814,39.1069479 C46.0424848,38.9134427 46.0453207,38.5968729 45.8518155,38.3998695 C45.8497107,38.3977268 45.8475868,38.395603 45.8454438,38.3934985 L29.0062211,21.8567812 C28.8091972,21.6632968 28.8063279,21.3467273 29.0008424,21.1497035 C29.0029653,21.1475418 29.0051077,21.1453995 29.0072695,21.1432767 L45.8465093,4.60825197 C46.0435431,4.41477773 46.0464286,4.09820839 45.8529543,3.90117456 C45.8508674,3.89904911 45.8487614,3.89694235 45.8466367,3.89485454 Z"
+                    fill="#FFFFFF"></path>
+                  <path id="arrow-icon-three"
+                    d="M65.8453933,3.89485454 L62.0234718,0.139296592 C61.8289556,-0.0518420739 61.5171538,-0.0518571125 61.3226192,0.139262789 L40.3081733,20.7848311 C39.9142066,21.1718824 39.9086004,21.8050225 40.2956517,22.1989893 C40.2997679,22.2031791 40.303921,22.2073326 40.3081105,22.2114492 L61.3226887,42.8607841 C61.517191,43.0519059 61.8289625,43.0519358 62.0245014,42.8608513 L65.8462681,39.1069479 C66.0432715,38.9134427 66.0461074,38.5968729 65.8526022,38.3998695 C65.8504974,38.3977268 65.8483735,38.395603 65.8462305,38.3934985 L49.0066609,21.8567812 C48.809637,21.6632968 48.8067678,21.3467273 49.0002822,21.1497035 C49.0024051,21.1475418 49.0045475,21.1453995 49.0067093,21.1432767 L65.8459491,4.60825197 C66.0429829,4.41477773 66.0458684,4.09820839 65.8523941,3.90117456 C65.8503071,3.89904911 65.8482011,3.89694235 65.8460758,3.89485454 Z"
+                    fill="#FFFFFF"></path>
+                </g>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </br>
+          <div class="btn-conteiner">
+            <a class="btn-content" href="index3.html">
+              <span class="btn-title">NEXT</span>
+              <span class="icon-arrow">
+                <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path id="arrow-icon-one"
+                      d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path id="arrow-icon-two"
+                      d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                    <path id="arrow-icon-three"
+                      d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z"
+                      fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </br>
+        </br>
+        </br>
+        </br>
+        
+        
+          
+
+          
+
+        </div><!-- End Right side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
